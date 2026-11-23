@@ -24,32 +24,22 @@ Sharp-Render is a C# application that parses BMP files and displays them in the 
 
 ## Installation
   
-[Precompiled binaries](https://github.com/Username0103/sharp-render/releases) are available on the releases.
+[Precompiled binaries](https://github.com/Username0103/sharp-render/releases) are available on the release page.
   
 To run from source:
 ```bash
 git clone https://github.com/Username0103/sharp-render
 cd sharp-render
-dotnet run
+dotnet run -- # Your flags here
 ```
 
 ## Usage
 
-`cd` to the directory where the executable is kept, then simply run it by typing in the filename. The program will show you all the flags and such.
+In a supported terminal, `cd` to the directory where the executable is kept, then simply run it by typing in the filename. The program will show you all the flags and such.
 
 For best results, size your terminal to be close to the aspect ratio of the target image.  
-Decreasing the font size increases the avaliable resolution, but it does get slower.
+Decreasing the terminal's font size (typically `ctrl` + `=` or `-`) increases the available resolution.
 Since Floyd–Steinberg dithering depends on the previous results, dithering runs on a single core and thus is very slow.
-  
-## Future Enhancements
-
-- Support for additional image formats (PNG, JPEG)
-- Different scaling algorithms
-- ASCII art mode for non-color terminals
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## More examples
 
